@@ -36,3 +36,22 @@ void PrintMatrix(double[,] matrix)
 
 double[,] array2D = CreateMatrixRndDouble(3, 4,-1,10);
 PrintMatrix(array2D);
+
+
+
+// Console.WriteLine("Введите  чисело строк: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите  чисело столбцов: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите минимальное число: ");
+// float MinValue = Convert.ToInt64(Console.ReadLine());
+
+// Console.WriteLine("Введите максимальное число: ");
+// float MaxValue = Convert.ToInt64(Console.ReadLine());
+
+
+
+// (int,int,float,float) typle = (rows,columns,MinValue,MaxValue);
+
