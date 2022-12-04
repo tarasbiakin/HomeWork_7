@@ -14,7 +14,7 @@ double[,] CreateMatrixRndDouble(int rows, int columns, float MinValue, float Max
     {
         for (int j = 0; j < matrix.GetLength(1); j++) // matrix.GetLength(2)
         { 
-             matrix[i, j] =  Math.Round(rnd.NextDouble()*((MaxValue-MinValue)+MinValue),2);
+             matrix[i, j] =  rnd.NextDouble()*((MaxValue-MinValue)+MinValue);
         }
     }
     return matrix;
@@ -27,8 +27,8 @@ void PrintMatrix(double[,] matrix)
         Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],4}, ");
-            else Console.Write($"{matrix[i, j],4} ");
+            if (j < matrix.GetLength(1) - 1) Console.Write($"{Math.Round(matrix[i, j],2),4}, ");
+            else Console.Write($"{Math.Round(matrix[i, j],2),4} ");
         }
         Console.WriteLine("|");
     }
@@ -53,5 +53,5 @@ PrintMatrix(array2D);
 
 
 
-// (int,int,float,float) typle = (rows,columns,MinValue,MaxValue);
+//(int,int,float,float) typle = (rows,columns,MinValue,MaxValue);
 

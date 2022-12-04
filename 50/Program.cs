@@ -41,14 +41,14 @@ void PrintMatrixSelekt(double[,] matrix, int i, int j)
 
 try
 {
-    Console.Write("Введите  чисело строк: ");
+    Console.Write("Введите  число строк: ");
     int rows = Convert.ToInt32(Console.ReadLine());
 
-    Console.Write("Введите  чисело столбцов: ");
+    Console.Write("Введите  число столбцов: ");
     int columns = Convert.ToInt32(Console.ReadLine());
 
     double[,] array2D = CreateMatrixRndDouble(3, 4, -1, 10);
-    
+
     PrintMatrix(array2D);
     if ((rows > array2D.GetLength(0)) || (columns > array2D.GetLength(1) || columns < 0 || rows < 0))
     {
